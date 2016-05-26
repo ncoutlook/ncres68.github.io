@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<!--link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/png" href="favicon.png">
+		<title>FAR</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="Index.html">   F | A | R     </a>
+    				</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="Index.html">Home</a></li>
+							<li class="active"><a href="#">Mission</a></li>
+							<li><a href="activities.html">Activities</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    					</ul>
+    				</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="main">
+			
+			<div class="container text-center">
+				<div class="jumbotron">
+					<h1>Mission</h1>
+					<p>Make the world a better place</p>
+				</div>
+				<p>Test line</p>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<hr>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p><span class="glyphicon glyphicon-copyright-mark"></span> Raihan Naeem 2016 | <span id="demo"></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"</script>
+		<script src="script.js"></script>
+		<script>
+			var d = new Date();
+			document.getElementById("demo").innerHTML = d.toDateString();
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,69 @@
+html, body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+	font-family: 'Amatic SC', cursive;
+	font-size: 48px;
+	font-weight: 400;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      height: 250px; /*was width:50% */
+      margin: auto;
+  }
+
+.main {
+	 margin-top: 100px;
+}
+
+.showcase {
+	/*border: 1px solid grey;*/
+	margin-top: 50px;
+}
+
+.navbar {
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+.navbar-brand {
+	font-size: 32px;
+}
+
+li .active {
+	background-color: green;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.footer {
+	margin-top: 80px;
+}
+
+
+
+/*ul {
+	float:right;
+}
+
+li {
+	padding: 10px;
+	/*border-left: 2px solid #000;
+	background: gray;
+	color: white;
+	vertical-align: middle;
+	margin-top: 24px;
+	text-align: middle;
+}
+
+li:hover {
+	background-color: black;
+}
+*/
