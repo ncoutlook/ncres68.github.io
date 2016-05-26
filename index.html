@@ -1,23 +1,149 @@
----
-layout: default
----
+<!doctype html>
+<html>
+	<head>
+		<!--link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/png" href="favicon.png">
+		<title>FAR</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="#">   F | A | R     </a>
+    				</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="mission.html">Mission</a></li>
+							<li><a href="activities.html">Activities</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    					</ul>
+    				</div>
+				</div>
+			</nav>
+		</header>
+				
+		<div class="main">
+			<div class="container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
 
-<div class="home">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner text-center" role="listbox">
+					<div class="item active">
+						<img src="f.jpg" alt="Farzin" class="img-rounded">
+						<div class="carousel-caption">
+							<h4>Farzin</h4>
+							<small>Farzin Afzal</small>
+    					</div>
+    				</div>
 
-  <h1 class="page-heading">Posts</h1>
+					<div class="item">
+						<img src="a.jpg" alt="Areeb" class="img-rounded">
+						<div class="carousel-caption">
+							<h4>Areeb</h4>
+							<small>Areeb Aman</small>
+						</div>
+    				</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+					<div class="item">
+						<img src="r.jpg" alt="Raihan" class="img-rounded">
+						<div class="carousel-caption">
+							<h4>Raihan</h4>
+							<small>Raihan Naeem</small>
+						</div>
+    				</div>
+					
+				</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			</div>
+			
+			<div class="container text-justify">
+				<div class="row row-eq-height">
+					<div class="clearfix visible-lg"></div>
+					
+					<div class="col-sm-4 showcase">
+						<h3>Farzin <small>afzal</small></h3>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.  Curabitur <mark>Farzin</mark> sodales ligula in libero. </p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+						<p>Sed dignissim lacinia nunc.</p>
+						<p></p>
+						<img src="icon-fb.png" width="20px">
 
-</div>
+
+					</div>
+					<div class="clearfix visible-xs"></div>
+
+					<div class="col-sm-4 showcase">
+						<h3>Areeb <small>aman</small></h3>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.  Curabitur sodales ligula in libero. </p>
+
+						<p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.  </p>
+
+
+					</div>
+					<div class="clearfix visible-xs"></div>
+
+					<div class="col-sm-4 showcase">
+						<h3>Raihan <small>naeem</small></h3>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. </p>
+
+						<p> Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.  </p>
+
+
+					</div>
+					<div class="clearfix visible-xs"></div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<hr>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p><span class="glyphicon glyphicon-copyright-mark"></span> Raihan Naeem 2016 | <span id="demo"></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"</script>
+		<script src="script.js"></script>
+		<script>
+			var d = new Date();
+			document.getElementById("demo").innerHTML = d.toDateString();
+		</script>
+
+	</body>
+</html>
